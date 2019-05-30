@@ -1,0 +1,38 @@
+body {
+    background-color: #4777cd;
+}
+
+#content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 100%;
+    width: 100%;
+}
+
+.center {
+    flex: 1;
+}
+
+#loading img{
+    margin: 0 auto;
+    display: block;
+}
+
+#numbers {
+    display: flex;
+}
+
+.lotteryNum {
+    flex: 1;
+    font-size: 8em;
+    background-color: rgba(0, 0, 0, .1);
+    text-align: center;
+}
+
+#resetBtn {
+    font-size: 15px;
+    width: 60px;
+    height: 30px;
+}

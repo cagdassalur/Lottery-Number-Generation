@@ -1,0 +1,30 @@
+version: '3'
+services:
+  
+  tcpserver:
+    container_name: tcpserver
+    build: ./TcpServer
+    ports:
+      - "8085:8085"
+  
+  restserver:
+    container_name: restserver
+    build: ./RestServer
+    ports:
+      - "8090:8090"
+    depends_on:
+      - "tcpserver"
+  
+  ui:
+    container_name: ui
+    build: ./ui
+    ports:
+      - "8000:80"
+    environment:
+      - BACKENDHOST=104.248.142.13
+      - BACKENDPORT=8090
+    depends_on:
+      - "restserver"
+  
+
+    
