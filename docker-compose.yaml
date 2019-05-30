@@ -21,8 +21,8 @@ services:
     ports:
       - "8000:80"
     environment:
-      - BACKENDHOST=104.248.142.13
-      - BACKENDPORT=8090
+      - BACKENDHOST=YOURIP
+      - BACKENDPORT=YOURPORT
     depends_on:
       - "restserver"
   
