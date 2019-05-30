@@ -22,7 +22,7 @@ services:
       - "8000:80"
     environment:
       - BACKENDHOST=YOURIP
-      - BACKENDPORT=YOURPORT
+      - BACKENDPORT=8090
     depends_on:
       - "restserver"
   
