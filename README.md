@@ -14,7 +14,7 @@ Edit these lines in __docker-compose.yaml__ to set environment variables to your
 ```
 ...
       - BACKENDHOST=YOURIP
-      - BACKENDPORT=YOURPORT
+      - BACKENDPORT=8090
 ...
 ```
 
